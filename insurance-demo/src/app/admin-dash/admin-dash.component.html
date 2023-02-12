@@ -1,0 +1,32 @@
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>
+        Member Information
+      </mat-card-title>
+      <mat-card-subtitle>
+        Admin Dashboard
+      </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-form-field>
+        <!--input matInput placeholder="Search Member" (keyup)="searchMembers($event.target.value)"-->
+      </mat-form-field>
+      <mat-card *ngFor="let member of members">
+        <mat-card-header>
+          <mat-card-title>
+            {{ member.firstName }} {{ member.lastName }}
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Address: {{ member.address }}</p>
+          <p>City: {{ member.city }}</p>
+          <p>State: {{ member.state }}</p>
+          <p>Zip: {{ member.zip }}</p>
+          <p>Contact Number: {{ member.contactNo }}</p>
+          <p>D.O.B.: {{ member.dob }}</p>
+          <p>Gender: {{ member.gender }}</p>
+          <p>Consent to Emails: {{ member.consentToEmails }}</p>
+        </mat-card-content>
+      </mat-card>
+    </mat-card-content>
+  </mat-card>

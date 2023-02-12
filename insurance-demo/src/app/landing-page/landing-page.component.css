@@ -1,0 +1,46 @@
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+  }
+  
+  .title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  
+  .subtitle {
+    font-size: 1.5em;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+  
+  .get-started-btn {
+    width: 80%;
+    height: 50px;
+    background-color: #3f51b5;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 25px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .title {
+      font-size: 3em;
+    }
+  
+    .subtitle {
+      font-size: 2em;
+    }
+  
+    .get-started-btn {
+      width: 200px;
+    }
+  }
+  

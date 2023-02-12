@@ -1,0 +1,51 @@
+<div *ngIf="showLogin" class="login-container">
+    <h2>Login</h2>
+    <form>
+      <mat-form-field class="form-field">
+        <input matInput placeholder="Email">
+      </mat-form-field>
+      <mat-form-field class="form-field">
+        <input matInput placeholder="Password" type="password">
+      </mat-form-field>
+      <button mat-raised-button class="submit-button">Submit</button>
+    </form>
+    <p>Don't have an account? <a (click)="toggleForm()">Sign up</a></p>
+  </div>
+  
+  <div *ngIf="!showLogin" class="reg-container">
+    <h2>Sign up</h2>
+    <form>
+      <div class="form-row">
+        <mat-form-field class="form-field">
+          <input matInput placeholder="First Name">
+        </mat-form-field>
+        <mat-form-field class="form-field">
+          <input matInput placeholder="Last Name">
+        </mat-form-field>
+      </div>
+      <mat-form-field class="form-field">
+        <input matInput placeholder="Address">
+      </mat-form-field>
+      <div class="form-row">
+        <mat-form-field class="form-field">
+          <input matInput placeholder="City">
+        </mat-form-field>
+        <mat-form-field class="form-field">
+          <input matInput placeholder="State">
+        </mat-form-field>
+      </div>
+      <mat-form-field class="form-field">
+        <input matInput placeholder="Zip">
+      </mat-form-field>
+      <mat-form-field class="form-field">
+        <input matInput placeholder="Contact Number">
+      </mat-form-field>
+      <mat-form-field class="form-field">
+        <input matInput placeholder="D.O.B." [(ngModel)]="dob">
+      </mat-form-field>
+      <mat-checkbox class="consent-checkbox">Consent to emails</mat-checkbox>
+      <button mat-raised-button color="primary" (click)="onSave()" class="submit-button">Save</button>
+    </form>
+    <p>Already have an account? <a (click)="toggleForm()">Login</a></p>
+  </div>
+  

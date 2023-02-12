@@ -1,0 +1,20 @@
+mat-card {
+    width: 80%;
+    margin: 2em auto;
+    text-align: center;
+  }
+  
+  mat-card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  mat-card-subtitle {
+    font-size: 1.2em;
+    font-weight: lighter;
+  }
+  
+  mat-form-field {
+    width: 50%;
+   
+  }  

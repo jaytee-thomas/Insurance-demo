@@ -1,0 +1,20 @@
+/* The footer */
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    
+    color: rgb(7, 7, 7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: solid 1px #ccc;
+  }
+  
+  
+  a {
+    margin: 0 10px;
+    width: 30px;
+  }

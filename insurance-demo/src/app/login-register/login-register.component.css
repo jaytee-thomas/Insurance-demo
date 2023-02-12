@@ -1,0 +1,62 @@
+.login-container, .reg-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .form-field {
+    width: 100%;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .submit-button {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #3f51b5;
+    color: #fff;
+    border-radius: 25px;
+  }
+  
+  .consent-checkbox {
+    margin-top: 20px;
+  }
+  
+  @media only screen and (min-width: 320px) {
+    .login, .reg {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .reg-fname, .reg-lname {
+      width: 45%;
+      display: inline-block;
+      margin-left: 10px;
+    }
+  
+    .reg-address, .reg-zip, .reg-contactNo, .reg-dob {
+      width: 100%;
+    }
+  
+    .reg-city, .reg-state {
+      width: 45%;
+      display: inline-block;
+      margin-top: 20px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .reg-fname, .reg-lname {
+      width: 20%;
+    }
+  
+    .reg-city, .reg-state {
+      width: 20%;
+    }
+  }
+  
